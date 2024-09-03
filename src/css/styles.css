@@ -6,6 +6,12 @@
   --card-text:rgb(252, 254, 231);
 }
 
+@media only screen and (max-width: 600px) {
+  .home-img, .about-img, .menu-img{
+      display: none;
+  }
+}
+
 
 html{
     background-image: url('../img/zelda.jpg');
