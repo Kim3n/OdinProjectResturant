@@ -1,0 +1,349 @@
+:root {
+  --font-color: #d0ab5e;
+  --text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  --ribbon-color:rgb(172,71,0);
+  --ribbon-text-color: white;
+  --card-text:rgb(252, 254, 231);
+}
+
+
+html{
+    background-image: url('../img/zelda.jpg');
+    margin: 0;
+    min-height: 100vh;
+}
+body{
+  margin: 0;
+  overflow-y: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body * {
+    font-family: 'hylia_serif_betaregular';
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+    font-weight: normal;
+  }
+
+  .sheikah{
+    font-family: 'botw_sheikahregular';
+    text-shadow: var(--text-shadow);
+    color: #30c2d5;
+  }
+
+  .wilds{
+    font-family: 'the_wild_breath_of_zeldaRg';
+    text-shadow: var(--text-shadow);
+
+  }
+
+  .hylian{
+    font-family: 'albw_botw_hylianregular';
+    text-shadow: var(--text-shadow);
+
+  }
+
+  /* HEADER*/
+
+  header{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+    footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+  }
+
+  footer a{
+    text-decoration: none;
+  }
+
+  footer h3:hover{
+    color: aliceblue;
+  }
+
+#nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50%;
+  margin-left: 50%;
+}
+
+#nav button{
+  width: 100px;
+  text-align: center;
+  font-size: 25px;
+  padding: 0;
+  border: none;
+  background: none;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
+}
+#nav button:hover{
+  text-align: center;
+  font-size: 25px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: aliceblue;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
+  cursor: pointer;
+}
+
+.menu-section{
+  animation: fadeIn 1.5s;
+}
+
+
+.home-container{
+  animation: fadeIn 1.5s;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-container h1{
+  margin-top: 0;
+  font-size: 76px;
+}
+
+.slogan{
+  font-size: 36px;
+}
+
+.home-container img{
+  max-width: 150px;
+}
+
+.about-container{
+  animation: fadeIn 1.5s;
+  width: 60%;
+  text-align: center;
+}
+.about-container p{
+  font-size: 24px;
+}
+.about-section h2{
+  font-size: 36px;
+  text-decoration: underline;
+} 
+
+.about-section h1{
+ margin-top: 0;
+} 
+
+
+.contact-us-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.about-section h1, .about-section h2, .about-section p {
+  margin-bottom: 0;
+} 
+
+
+
+.sheikah-slate-number{
+  font-family: 'botw_sheikahregular';
+  margin-bottom: 1rem;
+  color: #30c2d5;
+  cursor: pointer;
+}
+.sheikah-slate-number:hover{
+  color: aliceblue;
+}
+
+.triforce{
+  max-width: 150px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.sword{
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.home-img, .about-img, .menu-img{
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+  #content{
+   
+    display: flex;
+    justify-content: center;
+  }
+  #content h1{
+    margin-top: 0;
+    text-align: center;
+    font-size: 76px;
+  }
+
+  .menu-section{
+    width: 80%;
+  }
+  .menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card{
+    height: 120px;
+    overflow: hidden;
+    padding: 1.25rem;
+    width: 350px;
+    margin-top: 3rem;
+    background-color: rgba(29, 38, 47, 0.784);
+    backdrop-filter: blur(2px);
+    position: relative;
+    border-radius: 0px;
+    margin-top: 3rem;
+    align-items: flex-start;
+  }
+
+  .card:hover{
+    background-color: rgb(40, 55, 70);
+    cursor: pointer;
+  }
+  .card-border{
+    overflow: hidden;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-style: solid;
+    border-color: rgb(140, 134, 124);
+    border-width: 1px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+  .card-title{
+    max-width: 250px;
+    margin: 0px 0px 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    color: var(--card-text);
+    border-bottom: 1px solid rgb(140, 134, 124);
+    display: block;
+  }
+
+  .card-img{
+    max-width: 20%;
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-body{
+    max-width: 250px;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    color: var(--card-text);
+    border-bottom: 0px solid rgb(140, 134, 124);
+    display: inline-block;
+  }
+
+  .hyrule-ruler {
+    width: 100%;
+    height: 50px;
+    background: url('../img/hyrule_rule.png') repeat  center; 
+ }     
+ 
+  
+  .ribbon-right {
+    margin: 0;
+    background: var(--ribbon-color);
+    color: var(--ribbon-text-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(30%) translateY(0%) rotate(45deg);
+    transform-origin: top left;
+  }
+  
+  .ribbon-left {
+    margin: 0;
+    background: var(--ribbon-color);
+    color: var(--ribbon-text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    transform-origin: top right;
+  }
+  
+  .ribbon-left:before,
+  .ribbon-left:after,  
+  .ribbon-right:before,
+  .ribbon-right:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: 0 -1px;
+    width: 100%;
+    height: 100%;
+    background: var(--ribbon-color);
+  }
+  
+  .ribbon-left:before,
+  .ribbon-right:before {
+    right: 100%;
+  }
+  
+  .ribbon-left:after,
+  .ribbon-right:after {
+    left: 100%;
+  }
+  
+
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#bg {
+  background-image: url('../img/triangle-border.png');
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 5px;
+  animation: bgScrollLeft 20s linear infinite;
+}
+
+@keyframes bgScrollLeft {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -120px 0;
+  }
+}
